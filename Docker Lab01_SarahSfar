@@ -1,0 +1,9 @@
+1.Une machine virtuelle revient à exécuter ou à virtualiser un système complet (OS + matériel virtuel) et elle est gérée par un hyperviseur, alors qu’un conteneur partage le même OS que la machine hôte et revient simplement à virtualiser les processus,
+c’est-à-dire la partie applicative.Cela le rend beaucoup plus léger qu’une machine virtuelle.
+2.Un conteneur cest une abstraction dapplication
+3.Oui, une machine virtuelle et un conteneur peuvent coexister dans un même environnement. On peut installer Docker dans chaque VM pour exécuter des conteneurs, ce qui permet de combiner l’usage des machines virtuelles avec celui des conteneurs.
+4. Pour la commande docker container run alpine echo "hello from alpine", il a juste affiché "hello from alpine" en raison de la commande echo.
+5. Pour la commande docker container run alpine /bin/sh, elle a exécuté sans rien afficher.
+6. docker container run -it alpine /bin/sh : pour cette commande, il m’a donné la main sur le terminal, c’est un mode interactif.
+7.sert à lister tous les conteneurs Docker, qu’ils soient en cours d’exécution ou arrêtés.
+8.parce que chaque exécution crée un conteneur séparé
